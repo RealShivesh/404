@@ -6,10 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404-not found</title>
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Space+Mono&display=swap');
+
+    body{
+        font-family: 'Space Mono', monospace;
+        color: #333;
+    }
+    
+    h1{
+        font-family: 'Inconsolata', monospace;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section div{
+        margin: 0.3em 0.6em;
+    }
+
+    .bad-news{
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    article{
+        font-size: 1.125rem;
+        color: #4f4f4f;
+    }
+
+    img{
+        width: 90%;
+        height: auto;
+    }
+
+    button{
+        background: #333;
+        color: #fff;
+        font-family: 'Space Mono', monospace;
+        padding: 1.75em;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        font-size: 0.875rem;
+    }
+
+    footer div{
+        margin: 0.5em;
+    }
+
+</style>
 <body>
     <h1>404 not found</h1>
-    <section>I have bad news for you</section>
-    <article>The page you are looking for might be removed or is temprarily unavailable.</article>
-    <button>Back to homepage</button>
+    <section>
+        <div>
+            <img src="./Scarecrow.png" alt="">
+        </div>
+        <div class="bad-news">I have bad news for you</div>
+        <div>
+            <article>The page you are looking for might be removed or is temprarily unavailable.</article>
+        </div>
+        <div>
+            <button>Back to homepage</button> 
+        </div>
+    </section>
+    <footer>
+        <div>created by realshivesh</div>
+        <div>devchallenges.io</div>
+    </footer>
 </body>
 </html>
