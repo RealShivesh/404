@@ -32,6 +32,11 @@
         margin: 0.8em 0.6em;
     }
 
+    .counter{
+        display: flex;
+        flex-direction: column;
+    }
+
     .bad-news{
         font-size: 2.5rem;
         font-weight: 700;
@@ -57,13 +62,21 @@
     footer{
         position: fixed;
         bottom: 0;
+        width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
         font-size: 0.875rem;
     }
 
     footer div{
         margin: 0.5em;
+    }
+
+    @media (min-width: 768px) {
+        section{
+            flex-direction: row;
+        }
     }
 
 </style>
@@ -73,10 +86,12 @@
         <div>
             <img src="./Scarecrow.png" alt="">
         </div>
-        <div class="bad-news">I have bad news for you</div>
-        <div class="desc">The page you are looking for might be removed or is temprarily unavailable.</div>
-        <div>
-            <button>Back to homepage</button> 
+        <div class="counter">
+            <div class="bad-news">I have bad news for you</div>
+            <div class="desc">The page you are looking for might be removed or is temprarily unavailable.</div>
+            <div>
+                <button>Back to homepage</button> 
+            </div>
         </div>
     </section>
     <footer>
